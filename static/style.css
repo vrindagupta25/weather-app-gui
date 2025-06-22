@@ -1,0 +1,11 @@
+/* static/style.css */
+
+/* Basic body styling, Tailwind handles most. */
+body {
+    font-family: 'Inter', sans-serif;
+    /* This ensures a smooth transition for Tailwind's transform hover effects */
+    transition: background-color 0.3s ease;
+}
+
+/* You can add more custom styles here if needed, beyond Tailwind's utility classes. */
+/* For example, specific custom animations or highly unique elements. */

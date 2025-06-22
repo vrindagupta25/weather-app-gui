@@ -1,0 +1,15 @@
+
+# Python
+__pycache__/
+*.pyc
+.env # IMPORTANT: Keep your API key safe!
+venv/ # Ignore virtual environment folder if you created one locally
+*.env # Catch any .env files
+
+# Docker
+.dockerignore # Often explicitly ignored, though usually not strictly necessary
+
+# Operating System files
+.DS_Store
+Thumbs.db
+#hi vrinda here

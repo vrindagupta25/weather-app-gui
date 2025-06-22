@@ -1,0 +1,24 @@
+# docker-compose.yml for the Python Flask Weather App
+
+version: '3.8'
+
+services:
+  # Main Flask application service
+  weather-app:
+    # Build the image from the Dockerfile in the current directory
+    build:
+      context: . # Look for Dockerfile in the current directory
+      dockerfile: Dockerfile
+    # Map port 5000 from the container to port 5000 on the host
+    # This makes the app accessible on http://localhost:5000
+    ports:
+      - "5000:5000"
+    # Pass environment variables from the host's .env file into the container
+    env_file:
+      - ./.env
+    # Optional: Mount the current directory for development hot-reloading
+    # volumes:
+    #   - .:/app
+    #   - /app/venv # Exclude virtual environment if present on host
+    # Command to run (already defined in Dockerfile, but can be overridden here)
+    command: python app.py

@@ -1,0 +1,6 @@
+    # requirements.txt
+    Flask==2.3.3
+    python-dotenv==1.0.0
+    requests==2.31.0
+    Flask-Cors==4.0.0 # Or the latest stable version. This is important!
+    
